@@ -1,0 +1,116 @@
+body {
+    /* background-color: rgb(61, 61, 61); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    width: 400px;
+    height: auto;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgb(61, 61, 61);
+
+    .list {
+        width: 88%;
+
+        h3 {
+            margin: 25px 0;
+            font-weight: 700;
+        }
+
+        form {
+            width: 100%;
+            margin: 25px 0;
+
+            input {
+                width: 84%;
+                height: 40px;
+                border-radius: 3px;
+                border-width: 1px;
+                border-color: rgba(107, 107, 107, 0.397);
+                padding-left: 5px;
+            }
+
+            button {
+                background-color: #8E49E8;
+                border: none;
+                height: 40px;
+                border-radius: 3px;
+                padding: 0 15px;
+
+                i {
+                    color: white;
+                    font-size: 22px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            li {
+                display: flex;
+                background-color: #F2F2F2;
+                position: relative;
+                align-items: center;
+                margin: 10px 0;
+                padding-left: 5px;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+
+
+                /* li {
+                    margin: 10px 0;
+                } */
+
+                &:hover {
+                    span {
+                        display: block;
+                    }
+                }
+
+                span {
+                    right: 0;
+                    position: absolute;
+                    display: none;
+                    border-radius: 0 5px 5px 0;
+                    border: none;
+                    padding: 10px 15px;
+                    background-color: #E74C3C;
+                    text-align: center;
+
+                    i {
+                        color: white;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+            .list-bottom {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 25px;
+
+                p {
+                    margin: 0;
+                }
+
+                button {
+                    color: white;
+                    font-weight: 600;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
